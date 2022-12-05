@@ -1,7 +1,9 @@
-
+import { trpc } from '../utils';
 
 export default function Home() {
-  return (
-    <h1 className="">Hello World</h1>
-  )
+  const hello = trpc.hello.useQuery({ text: 'world' });
+
+  if (!hello.data) return <h1 className="">Carregando</h1>;
+
+  return <h1 className="">{hello.data?.greeting}</h1>;
 }
