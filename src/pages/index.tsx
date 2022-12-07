@@ -6,7 +6,7 @@ export default function Home() {
   if (!hello.data)
     return (
       <div className="container h-screen w-screen mx-auto flex items-center justify-center">
-        <h1 className="">Carregando</h1>
+        <h1 className="text-indigo-200 text-lg">Carregando</h1>
       </div>
     );
 
@@ -15,12 +15,12 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center w-80 bg-gray-700 shadow-gray-800 p-5 rounded-md">
         <div className="flex flex-row items-center justify-center">
           <img
-            src="https://github.com/poolar2021.png"
+            src="https://github.com/gabehamasaki.png"
             className="w-16 rounded-full"
           />
           <div className="flex flex-col ml-4">
             <h1 className="text-indigo-200 text-lg">@poolar2021</h1>
-            <p className="text-indigo-400 text-sm mt-1">Software Engineer</p>
+            <p className="text-indigo-400 text-sm mt-1">Full Stack Developer</p>
           </div>
         </div>
         <div className="flex items-center justify-center flex-row  mt-4 border-t border-t-gray-900 w-full">

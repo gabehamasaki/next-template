@@ -1,6 +1,6 @@
 import { inferAsyncReturnType } from '@trpc/server';
 
-import { prisma } from './prisma';
+import { prisma } from '../services/prisma';
 
 export async function createContext() {
   return {

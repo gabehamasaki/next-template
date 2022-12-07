@@ -1,4 +1,4 @@
-export const APP_KEY = process.env.APP_KEY;
+export const APP_KEY = process.env.APP_KEY || 'template';
 
 export function getStorageItem(key: string) {
   if (typeof window === 'undefined') return;
